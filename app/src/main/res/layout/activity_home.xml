@@ -11,7 +11,7 @@
         android:layout_width="82dp"
         android:layout_height="45dp"
         android:id="@+id/imageButton"
-        android:background="@drawable/Arrow"
+        android:background="@drawable/arrow"
         android:layout_marginBottom="45dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />
