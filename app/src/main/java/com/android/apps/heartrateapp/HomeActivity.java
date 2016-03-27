@@ -23,6 +23,9 @@ public class HomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
+        image = (ImageView) findViewById(R.id.imageView);
+        image.setImageBitmap(decodeSampledBitmapFromResource(getResources(), R.drawable.transhome, 150, 150));
+
 
         arrowButton = (ImageButton) findViewById(R.id.imageButton);
         arrowButton.setImageBitmap(decodeSampledBitmapFromResource(getResources(), R.drawable.arrow, 82, 45));
