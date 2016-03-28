@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.android.apps.heartrateapp.PulseActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/pulse_background"/>
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:background="#08000000"
+        android:id="@+id/pulse_next_button"
+        android:layout_marginBottom="42dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="49dp"
+        android:layout_marginEnd="49dp" />
+
+</RelativeLayout>

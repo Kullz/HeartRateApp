@@ -6,25 +6,25 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 
-public class InstructionsActivity extends AppCompatActivity {
+public class PulseActivity extends AppCompatActivity {
 
-    private ImageButton startButton;
+    private ImageButton nextButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_instructions);
 
-        startButton = (ImageButton) findViewById(R.id.start_button);
-        startButton.setOnClickListener(new View.OnClickListener() {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_pulse);
+
+        nextButton = (ImageButton) findViewById(R.id.pulse_next_button);
+        nextButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                Intent i = new Intent(InstructionsActivity.this, PulseActivity.class);
+                Intent i = new Intent(PulseActivity.this, DecisionActivity.class);
                 startActivity(i);
 
             }
         });
     }
 }
-

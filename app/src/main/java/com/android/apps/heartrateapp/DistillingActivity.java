@@ -6,25 +6,25 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 
-public class InstructionsActivity extends AppCompatActivity {
+public class DistillingActivity extends AppCompatActivity {
 
-    private ImageButton startButton;
+    private ImageButton nextButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_instructions);
+        setContentView(R.layout.activity_distilling);
 
-        startButton = (ImageButton) findViewById(R.id.start_button);
-        startButton.setOnClickListener(new View.OnClickListener() {
+        nextButton = (ImageButton) findViewById(R.id.next_distill_button);
+        nextButton.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View v) {
 
-                Intent i = new Intent(InstructionsActivity.this, PulseActivity.class);
+                Intent i = new Intent(DistillingActivity.this, ThanksActivity.class);
                 startActivity(i);
 
             }
         });
     }
 }
-
